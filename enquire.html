@@ -168,6 +168,15 @@
   .footer-social svg{width:16px;height:16px;stroke:var(--ink-dim);color:var(--ink-dim);transition:stroke 0.2s, color 0.2s;}
   .footer-social a:hover svg{stroke:var(--accent-bright);color:var(--accent-bright);}
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18538561288"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18538561288');
+</script>
 </head>
 <body>
 
@@ -251,7 +260,7 @@
         <div class="lq-summary-line"><span>Finance type</span><span id="sum-type">—</span></div>
         <div class="lq-summary-line"><span>Loan size</span><span id="sum-size">—</span></div>
         <div class="lq-summary-line"><span>Timing</span><span id="sum-timing">—</span></div>
-        <form class="lq-form" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form class="lq-form" name="enquiry" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="enquiry">
           <p style="display:none;"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
           <input type="hidden" name="finance-type" id="hidden-type">
